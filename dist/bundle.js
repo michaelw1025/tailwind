@@ -10,6 +10,6 @@
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-eval("\n\n//# sourceURL=webpack://lebanontailwind/./src/js/main.js?");
+eval("document.getElementById(\"hamburger\").onclick = function toggleMenu() {\n  var navToggle = document.getElementsByClassName(\"toggle\");\n\n  for (var i = 0; i < navToggle.length; i++) {\n    navToggle.item(i).classList.toggle(\"hidden\");\n  }\n};\n\n//# sourceURL=webpack://lebanontailwind/./src/js/main.js?");
 /******/ })()
 ;

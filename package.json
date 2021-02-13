@@ -11,7 +11,10 @@
     "css:lint": "stylelint src/scss/*.scss --syntax scss || true",
     "build:css": "npm run css:lint && npm run build:tailwind && npm run css:scss && npm run css:autoprefixer",
     "build:js": "webpack --mode=development",
+    "watch:js": "onchange \"src/js\" -- webpack --mode=development",
     "build:html": "posthtml -c posthtml.json",
+    "watch:html": "onchange \"src/views\" -- npm run build:html",
+    "watch": "npm run watch:*",
     "build:site": "npm run build:css && npm run build:js && npm run build:html",
     "serve": "browser-sync start --server \"dist\" --files \"dist\""
   },
@@ -36,8 +39,10 @@
   },
   "dependencies": {
     "autoprefixer": "^10.2.4",
+    "bufferutil": "^4.0.3",
     "postcss": "^8.2.6",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.0.3",
+    "utf-8-validate": "^5.0.4"
   }
 }
