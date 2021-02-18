@@ -15,9 +15,8 @@ module.exports = {
       lightBlue: colors.lightBlue,
       blue: colors.blue,
       purple: colors.purple,
-      white: {
-        DEFAULT: 'ffffff',
-      }
+      white: colors.white,
+      black: colors.black,
     },
   },
   variants: {
