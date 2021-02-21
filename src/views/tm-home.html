@@ -1,0 +1,72 @@
+<module href="/components/head.html"></module>
+
+    <title>LebWeb Login</title>
+</head>
+<body class="font-roboto">
+    
+    <div class="h-full w-full">
+        <module href="/components/main-nav.html" locals='{
+            "userName": "Jane Doe",
+            "userPosition": "Team Manager"
+        }'></module>
+  
+        <div class="flex flex-wrap">
+            <div class="w-full">
+                <div class="w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+                    <module href="/components/home-page-card.html" locals='{
+                        "borderColor": "border-red-600",
+                        "cardColor": "text-red-600",
+                        "titleIcon": "fa-users",
+                        "cardTitle": "Employees",
+                        "cardText": "951",
+                        "cardTextVisibility": "",
+                        "textIcon": "fa-arrow-up",
+                        "textIconColor": "text-green-400",
+                        "textIconTransform": "transform",
+                        "textIconTransformType": "rotate-45",
+                        "textIconHidden": "",
+                        "cardSubText": "7.2%",
+                        "cardSubTextHidden": ""
+                    }'></module>
+
+                    <module href="/components/home-page-card.html" locals='{
+                        "borderColor": "border-purple-600",
+                        "cardColor": "text-purple-600",
+                        "titleIcon": "fa-hands-helping",
+                        "cardTitle": "My Team",
+                        "cardText": "7 TLs",
+                        "cardTextVisibility": "",
+                        "textIcon": "",
+                        "textIconColor": "",
+                        "textIconTransform": "",
+                        "textIconTransformType": "",
+                        "textIconHidden": "hidden",
+                        "cardSubText": "231 TMs",
+                        "cardSubTextHidden": ""
+                    }'></module>
+
+                    <module href="/components/home-page-card.html" locals='{
+                        "borderColor": "border-emerald-600",
+                        "cardColor": "text-emerald-600",
+                        "titleIcon": "fa-clipboard-list",
+                        "cardTitle": "Queries",
+                        "cardText": "9",
+                        "cardTextVisibility": "",
+                        "textIcon": "",
+                        "textIconColor": "",
+                        "textIconTransform": "",
+                        "textIconTransformType": "",
+                        "textIconHidden": "hidden",
+                        "cardSubText": "Avail",
+                        "cardSubTextHidden": ""
+                    }'></module>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/bundle.js"></script>
+</body>
+</html>
